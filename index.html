@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aanchal Singh — AI Solutions Consultant</title>
+<meta name="description" content="Aanchal Singh — Aspiring AI Solutions Consultant. Generative AI, AI Automation & Product Thinking.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="navbar">
+  <a href="#hero" class="logo">A<span>S</span></a>
+  <nav class="nav-links">
+    <a href="#about" data-nav>About</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#certifications" data-nav>Certifications</a>
+    <a href="#contact" data-nav class="nav-cta">Contact</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-nav>About</a>
+  <a href="#experience" data-nav>Experience</a>
+  <a href="#projects" data-nav>Projects</a>
+  <a href="#skills" data-nav>Skills</a>
+  <a href="#certifications" data-nav>Certifications</a>
+  <a href="#contact" data-nav>Contact</a>
+</div>
+
+<!-- SIDE PROGRESS DOTS -->
+<div class="side-dots" id="sideDots">
+  <span data-target="hero" class="dot active"><i></i><em>Home</em></span>
+  <span data-target="about" class="dot"><i></i><em>About</em></span>
+  <span data-target="experience" class="dot"><i></i><em>Experience</em></span>
+  <span data-target="projects" class="dot"><i></i><em>Projects</em></span>
+  <span data-target="skills" class="dot"><i></i><em>Skills</em></span>
+  <span data-target="certifications" class="dot"><i></i><em>Certifications</em></span>
+  <span data-target="contact" class="dot"><i></i><em>Contact</em></span>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-grid">
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Portfolio — 2026</p>
+        <h1 class="hero-name reveal">Aanchal Singh</h1>
+        <h2 class="hero-tagline reveal">
+          <span class="gradient-text">Building AI Solutions</span> for Business
+        </h2>
+        <p class="hero-sub reveal">
+          Aspiring AI Solutions Consultant <span class="dot-sep">·</span> Generative AI
+          <span class="dot-sep">·</span> MCA <span class="dot-sep">·</span> AI Speaker
+        </p>
+        <div class="hero-actions reveal">
+          <a href="assets/Aanchal_Singh_Resume.pdf" download class="btn btn-primary magnetic">
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-ghost magnetic">View Projects</a>
+          <a href="#contact" class="btn btn-ghost magnetic">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal">
+        <div class="portrait-ring"></div>
+        <div class="portrait-frame">
+          <img src="assets/profile.png" alt="Portrait of Aanchal Singh">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-head reveal">
+      <p class="eyebrow">01 — About</p>
+      <h2>From operations to <span class="gradient-text">AI-driven impact.</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <p class="about-copy reveal">
+        Aanchal is an MCA graduate whose path into AI began where most technical careers don't —
+        in operations. Managing academic operations for <strong>500+ students</strong> taught her
+        how systems, people, and process break down at scale, and how the right intervention fixes
+        all three at once. That grounding now drives her interest in
+        <strong>Generative AI, AI automation, and AI product consulting</strong> —
+        translating powerful models into solutions people actually adopt.
+      </p>
+      <p class="about-copy reveal">
+        She has delivered <strong>100+ AI awareness sessions</strong>, turning complex AI concepts
+        into practical, human language for non-technical audiences. It's shaped how she thinks about
+        AI products today: not as demos, but as tools that need to earn trust, fit workflows, and
+        solve a real business problem — the same lens she now brings to consulting and product work.
+      </p>
+
+      <div class="stat-grid reveal">
+        <div class="stat-card">
+          <span class="stat-num" data-count="500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Students managed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="100">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">AI awareness sessions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num-text">MCA</span>
+          <span class="stat-label">Computer Applications</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num-text">GenAI</span>
+          <span class="stat-label">Core focus area</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="section-head reveal">
+      <p class="eyebrow">02 — Experience</p>
+      <h2>Where the <span class="gradient-text">groundwork</span> was laid.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="tl-marker">IDA</div>
+        <div class="tl-content">
+          <h3>Operations Manager</h3>
+          <p class="tl-org">International Design Academy</p>
+          <p class="tl-desc">
+            Led day-to-day academic and administrative operations for a student base of 500+,
+            coordinating faculty, students, and administration to keep programs running smoothly.
+            Built repeatable processes to reduce friction across enrollment, scheduling, and support.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-marker">KT</div>
+        <div class="tl-content">
+          <h3>Web Developer</h3>
+          <p class="tl-org">Kreate Technologies</p>
+          <p class="tl-desc">
+            Designed and built responsive websites end-to-end, converting client requirements
+            into clean, functional interfaces — the starting point for a broader interest in
+            how technical systems get shaped by real user needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-marker">NM</div>
+        <div class="tl-content">
+          <h3>Technical Support</h3>
+          <p class="tl-org">nMovido Tech</p>
+          <p class="tl-desc">
+            Diagnosed and resolved technical issues for end users, sharpening a habit of
+            structured troubleshooting and clear, patient client communication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="section-head reveal">
+      <p class="eyebrow">03 — Projects</p>
+      <h2>Ideas, <span class="gradient-text">built.</span></h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <div class="pc-top">
+          <span class="pc-tag">Conversational AI</span>
+        </div>
+        <h3>AI Admission Assistant</h3>
+        <p>
+          A conversational assistant that guides prospective students through admissions queries,
+          program details, and application steps — reducing manual query load on academic staff.
+        </p>
+        <div class="pc-stack">
+          <span>Generative AI</span><span>Prompt Design</span><span>Automation</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-top">
+          <span class="pc-tag">Applied AI · CRM</span>
+        </div>
+        <h3>AI CRM Assistant</h3>
+        <p>
+          An AI layer on top of CRM workflows that helps sales and support teams surface customer
+          context, draft responses, and prioritize follow-ups faster.
+        </p>
+        <div class="pc-stack">
+          <span>LLM Integration</span><span>Workflow Automation</span><span>Product</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-top">
+          <span class="pc-tag">Machine Learning</span>
+        </div>
+        <h3>Financial Anomaly Detection using AI</h3>
+        <p>
+          A machine learning system that flags unusual transaction patterns in financial data,
+          built for early detection of fraud or reporting errors.
+        </p>
+        <div class="pc-stack">
+          <span>Python</span><span>ML</span><span>Data Analysis</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="pc-top">
+          <span class="pc-tag">AI Consulting</span>
+        </div>
+        <h3>AI Career Consultant</h3>
+        <p>
+          An AI-driven guidance tool that analyzes a user's background and goals to recommend
+          personalized learning paths and career directions.
+        </p>
+        <div class="pc-stack">
+          <span>Generative AI</span><span>Personalization</span><span>Product Thinking</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section-head reveal">
+      <p class="eyebrow">04 — Skills</p>
+      <h2>The <span class="gradient-text">toolkit.</span></h2>
+    </div>
+
+    <div class="skills-wrap">
+      <div class="skill-group reveal">
+        <h4>AI &amp; Technical</h4>
+        <div class="pill-row">
+          <span class="pill">Generative AI</span>
+          <span class="pill">Prompt Engineering</span>
+          <span class="pill">AI Automation</span>
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Product &amp; Leadership</h4>
+        <div class="pill-row">
+          <span class="pill">Product Thinking</span>
+          <span class="pill">Public Speaking</span>
+          <span class="pill">Stakeholder Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section certifications">
+    <div class="section-head reveal">
+      <p class="eyebrow">05 — Certifications</p>
+      <h2>Learning, <span class="gradient-text">verified.</span></h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <span class="cert-badge">LB</span>
+        <h4>Advanced Data Science &amp; Generative AI</h4>
+        <p>LearnBay</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-badge">MS</span>
+        <h4>Certification</h4>
+        <p>Microsoft</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-badge">IBM</span>
+        <h4>Certification</h4>
+        <p>IBM</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-badge">G</span>
+        <h4>Certification</h4>
+        <p>Google</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-badge">NS</span>
+        <h4>Certification</h4>
+        <p>NASSCOM</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-badge">Ad</span>
+        <h4>Certification</h4>
+        <p>Adobe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">06 — Contact</p>
+      <h2>Let's build something <span class="gradient-text">intelligent.</span></h2>
+      <p class="contact-sub">
+        Open to AI consulting opportunities, product collaborations, and speaking engagements.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:aanchasinghl2411@gmail.com" class="contact-link magnetic">
+          <span class="cl-label">Email</span>
+          <span class="cl-value">aanchasinghl2411@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/aanchalsingh2411" target="_blank" rel="noopener" class="contact-link magnetic">
+          <span class="cl-label">LinkedIn</span>
+          <span class="cl-value">linkedin.com/in/aanchalsingh2411</span>
+        </a>
+      </div>
+      <a href="mailto:aanchasinghl2411@gmail.com" class="btn btn-primary magnetic contact-cta">Say Hello</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Aanchal Singh — 2026</p>
+  <p>Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
